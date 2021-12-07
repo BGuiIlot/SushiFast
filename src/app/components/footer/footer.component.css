@@ -1,0 +1,8 @@
+.footer {
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+}

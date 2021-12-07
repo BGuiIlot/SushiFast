@@ -1,0 +1,17 @@
+<body>
+  <div class="column is-3 mb-4" *ngFor="let boxe of Boxes">
+    <div class="container">
+      <div class="card">
+        <figure class="card__thumb">
+          <img src="./assets/pictures/{{boxe.image}}.jpg" class="card__image">
+          <figcaption class="card__caption">
+            <h2 class="card__title">{{boxe.nom}}</h2>
+            <p>{{boxe.prix}}<br />
+              {{boxe.pieces}}</p>
+            <a href="" class="card__button">Read more</a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</body>
