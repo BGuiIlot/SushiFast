@@ -1,4 +1,4 @@
-# <center><img src="https://cdn.discordapp.com/attachments/468472388431118346/920264406909198366/pusheen-sushi-unscreen.gif" style="zoom: 33%;" />*SushiFast*<img src="https://cdn.discordapp.com/attachments/468472388431118346/920264406909198366/pusheen-sushi-unscreen.gif" style="zoom: 33%;" />
+# <center><img src="https://cdn.discordapp.com/attachments/468472388431118346/920264406909198366/pusheen-sushi-unscreen.gif" style="zoom: 33%;" /><img src="https://media.discordapp.net/attachments/917717231801098260/920265411877011546/sushifast-logo-github.png" style="zoom: 67%;" /><img src="https://cdn.discordapp.com/attachments/468472388431118346/920264406909198366/pusheen-sushi-unscreen.gif" style="zoom: 33%;" />
 
 ### *Présentation*
 
