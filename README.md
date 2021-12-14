@@ -97,7 +97,7 @@ Dépôts GitHub : https://github.com/BGuiIlot/SushiFast
 
 <img src="https://media.discordapp.net/attachments/901086910083108927/917431932462170213/EnormePenisOversize.PNG" alt="img" style="zoom:67%;" />
 
-### *Structure JSON*
+### *Structure JSON des commandes enregistrées dans le LocalStorage*
 
 ![Une image contenant texte  Description générée automatiquement](https://cdn.discordapp.com/attachments/901086910083108927/917729209537945610/unknown.png)
 
