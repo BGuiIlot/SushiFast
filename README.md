@@ -2,7 +2,7 @@
 
 ## Présentation
 
-Développement d'une application Web à l'aide du framework Angular qui utilise une API Node.
+Développement d'une application Web à l'aide du framework Angular qui utilise une API Node SushiShop.
 
 Niveau : Deuxième année de BTS SIO SLAM
 
@@ -16,7 +16,28 @@ Etroite collaboration avec l’équipe Brancodeurs 1 composé de Lucas et Alexan
 
 ## **Objectif**
 
-Ce projet a été réalisé dans un premier temps du 29/11/2021 au 10/12/2021 pour l'aspect théorique (diagramme,structure JSON...)  et ensuite dans un second temps du 10/12/2021 au 18/02/2022 sur l'aspect technique (code), le but était de crée une application Angular qui affiche //todo
+L’application Web aura pour résultat essentiel le calcul d’une commande de plateaux de Sushi. 
+
+Elle comportera : 
+
+​	-> l’affichage de la liste des plateaux de Sushi,
+
+​	 -> la possibilité de voir le détail d’un plateau, 
+
+​	-> l’achat d’un ou plusieurs plateaux sous la forme d’un panier, 	
+
+​	-> la visualisation des commandes sauvegardées localement,
+
+​	-> une page spécifique concernant la mise en place du RGPD
+
+Les **attendus techniques** demandés : 
+
+ 	1. Interrogation d’une API existante via la saisie d’informations dans un formulaire,
+ 	2. Définition d’une entité objet pour la représentation des données, 
+ 	1. Affichage de la liste des objets, accès au détail, calcul de commande, 
+ 	1. Sauvegarde locale côté client (LocalStorage), 
+ 	1. Prise en compte d’au moins 2 Evil User Stories, 
+ 	1. Test unitaire (au moins 3).
 
 ## Liens dépôts
 
@@ -70,4 +91,4 @@ Dépôts GitHub : https://github.com/BGuiIlot/SushiFast
 
  
 
-![Une image contenant texte  Description générée automatiquement](https://cdn.discordapp.com/attachments/468472388431118346/917728635446771712/azfteyfugkbhzfgtgyeuritjh.PNG)
+<img src="https://cdn.discordapp.com/attachments/468472388431118346/917728635446771712/azfteyfugkbhzfgtgyeuritjh.PNG" alt="Une image contenant texte  Description générée automatiquement" style="zoom: 200%;" />
