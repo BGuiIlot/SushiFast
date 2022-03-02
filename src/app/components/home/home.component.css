@@ -1,0 +1,11 @@
+body {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: url('https://cdn.discordapp.com/attachments/917717231801098260/938390447607406592/wallpaper-image-nourriture-sushi-05.jpg') fixed center no-repeat;
+    background-size: 100%;
+}
+
+.home-banner {
+    backdrop-filter: blur(3px);
+}

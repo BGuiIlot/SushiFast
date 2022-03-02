@@ -1,17 +1,66 @@
-<body>
-  <div class="column is-3 mb-4" *ngFor="let boxe of Boxes">
-    <div class="container">
-      <div class="card">
-        <figure class="card__thumb">
-          <img src="./assets/pictures/{{boxe.image}}.jpg" class="card__image">
-          <figcaption class="card__caption">
-            <h2 class="card__title">{{boxe.nom}}</h2>
-            <p>{{boxe.prix}}<br />
-              {{boxe.pieces}}</p>
-            <a href="" class="card__button">Read more</a>
-          </figcaption>
-        </figure>
-      </div>
+<div class="main">
+    <div class="frame" *ngFor="let box of Boxes">
+        <div class="card">
+            <figure class="card-thumb">
+                <img src="./assets/pictures/{{box.image}}.jpg" class="card__image">
+                <figcaption class="card-caption">
+                    <h2 class="card-title">{{box.nom}}</h2>
+                    <p>{{box.prix}} €<br /> {{box.pieces}} pièces
+                    </p>
+                    <button class="card-button" (click)="affModal(box.id -1)">Voir plus</button>&nbsp;
+                    <a class="bouton-cart"><img
+                            src="https://cdn.discordapp.com/attachments/917717231801098260/920374279097430046/basket_icon-icons.com_67985.png"
+                            (click)=addtocart(box) class="cart-frame-image"></a>
+                </figcaption>
+            </figure>
+        </div>
     </div>
-  </div>
-</body>
+</div>
+<div class="modal is-active" *ngIf="showModal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="modal-head" style="text-align: center;">
+            <h1 class="modal-title" style="color: gold;">{{boxmodal.nom}}</h1>
+            <img class="presentation" src="./assets/pictures/{{boxmodal.image}}.jpg" />
+            <p>Prix : {{boxmodal.prix}} €</p>
+        </div>
+        <div class="modal-body">
+            <p style="color: gold;">{{boxmodal.pieces}} PIÈCES, COMPOSITIONS :</p>
+            <div *ngFor="let composition of boxmodal.composition">
+                <p class="compo">{{composition.quantite}} {{composition.nom}}</p>
+            </div>
+            <p>SAVEURS :</p>
+            <p> {{boxmodal.saveurs}}</p>
+        </div>
+
+        <a class="bouton-cart"><img
+                src="https://cdn.discordapp.com/attachments/917717231801098260/920374279097430046/basket_icon-icons.com_67985.png"
+                (click)=addtocart(boxmodal) class="cart-frame-image"></a>
+        <button class="card-button" (click)="affModal(0)">Fermer</button>
+    </div>
+</div>
+
+<table class="tablepanier">
+    <h2 style="text-align: center;">panier</h2>
+    <thead>
+        <tr style="color: white;">
+            <th></th>
+            <th>Nom</th>
+            <th>Prix</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let boxe of box let i = index">
+            <td><img src="./assets/pictures/{{boxe.image}}.jpg" style="width: 58px;"></td>
+            <th style="max-width: 150px;">{{boxe.nom}}</th>
+            <th>{{boxe.prix}} €</th>
+            <td>
+                <button class="cart-button" (click)=removeitem(boxe)>Supprimer</button>
+            </td>
+        </tr>
+    </tbody>
+    <h3 style="text-align: center;" class="total-panier">Total : {{grandTotal}} €<button class="cart-button"
+            (click)=addToHistorique()>Payer</button></h3>
+    <button class="cart-button-all" (click)=emptycart()>Supprimer le panier</button>
+</table>

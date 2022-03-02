@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { RgpdComponent } from "./components/rgpd/rgpd.component";
 import { BoxsComponent } from "./components/boxs/boxs.component";
-import { BoxComponent } from './components/box/box.component';
+import { HistoriqueCommandeComponent } from './components/historique-commande/historique-commande.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-{ path: 'rgpd', component: RgpdComponent },
-{ path: 'boxe', component: BoxComponent },
-{ path: '', component: BoxsComponent },
+  { path: 'rgpd', component: RgpdComponent },
+  { path: 'boxes', component: BoxsComponent },
+  { path: 'historique', component: HistoriqueCommandeComponent },
+  { path: '', component: HomeComponent },
 ];
 
 @NgModule({

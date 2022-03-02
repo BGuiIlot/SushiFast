@@ -1,0 +1,80 @@
+body {
+    background-color: #1c1c1c;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: auto;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    background-color: rgba(31, 31, 31, 0.5);
+}
+
+.nav-links a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 500;
+    color: white;
+    text-shadow: 5%;
+    text-decoration: none;
+}
+
+.nav-links a {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-top: 8px;
+    z-index: 101;
+}
+
+.nav-links li {
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: color 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: gold;
+}
+
+.nav-links li a:after {
+    color: gold;
+}
+
+
+/*.entire-head {
+    width: 100%;
+    height: 40vh;
+    background: url('https://www.kyosushi.com/wp-content/uploads/2018/05/IMG_4594.jpg') center fixed no-repeat;
+    background-size: 1920px 1080px;
+}
+*/
+
+.website-banner {
+    height: 25vh;
+    width: 100%;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-shadow: .2em #0000008a;
+}
+
+.logo-site {
+    height: 7vh;
+    width: auto;
+    cursor: pointer;
+}

@@ -1,8 +1,23 @@
 .footer {
-    text-align: center;
-    bottom: 0;
     width: 100%;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 13px;
+    padding: 1%;
+    text-align: center;
+    background-color: rgba(25, 25, 25, 0.7);
+    text-decoration: none;
+    backdrop-filter: blur(6px);
+    color: white;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: gold;
+    transition: color 0.3s ease 0s;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.footer-link:after {
+    color: white;
 }

@@ -8,9 +8,9 @@ describe('RgpdComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RgpdComponent ]
+      declarations: [RgpdComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
@@ -22,4 +22,11 @@ describe('RgpdComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('Est-ce que mon titre s\'affiche', () => {
+    const rootElt = fixture.nativeElement;
+
+    const title = rootElt.querySelector("div h1:first-of-type").textContent;
+    expect(title).toContain('Responsable')
+  })
 });
